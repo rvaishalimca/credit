@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="card">
+    <p class="card-no">Card Number <br>{{cardNumber}}</p>
+    <div class="card-holder">
+      <p>Card holder <br>{{cardHolder}}</p>
+    </div>
+    <p class="expiry">Expiry date <br> {{month}}/{{year}}</p>
+    <p class="cvv">CVV <br>{{cvv}}</p>
+  </div>
+  <div class="form">
+    <form action="">
+      <div>
+        <label for="card-number">Card Number</label>
+        <input type="number" id="card-number" name="cardNumber" [(ngModel)]="cardNumber" min="1" max="16">
+      </div>
+      <div>
+        <label for="card-name">Card Name</label>
+        <input type="text" id="card-name" name="cardHolder" [(ngModel)]="cardHolder">
+      </div>
+      <div>
+        <label for="Expiration-Date">Expiration Date</label>
+        <select name="month" id="month" name="month" [(ngModel)]="month">
+          <option value="01">Jan</option>
+          <option value="02">Feb</option>
+          <option value="03">Mar</option>
+          <option value="04">Apr</option>
+          <option value="05">May</option>
+          <option value="06">Jun</option>
+          <option value="07">Jul</option>
+          <option value="08">Aug</option>
+          <option value="09">Sep</option>
+          <option value="10">Oct</option>
+          <option value="11">Nov</option>
+          <option value="12">Dec</option>
+        </select>
+        <select name="month" id="month" [(ngModel)]="year">
+          <option value="20">2020</option>
+          <option value="21">2021</option>
+          <option value="22">2022</option>
+          <option value="23">2023</option>
+        </select>
+      </div>
+      <div>
+        <label for="cvv">CVV</label>
+        <input type="number" id="cvv" name="cvv" [(ngModel)]="cvv">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>

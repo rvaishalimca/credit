@@ -1,0 +1,34 @@
+body {
+    background: #ddd;
+}
+
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 50px 45px 50px; 
+    border: 2px solid;
+}
+
+.card {
+    border: 1px solid #333;
+    padding: 15px;
+    margin-bottom: 35px;
+}
+
+label, input {
+    display: block;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+form > div {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 95%;
+    padding: 10px 15px;
+}
